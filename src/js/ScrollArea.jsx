@@ -477,7 +477,7 @@ ScrollArea.defaultProps = {
     horizontal: true,
     smoothScrolling: false,
     swapWheelAxes: false,
-    contentWindow: (typeof window === "object") ? window : undefined,
-    ownerDocument: (typeof document === "object") ? document : undefined,
+    contentWindow: (typeof window === "object") ? window : {},
+    ownerDocument: (typeof document === "object") ? document : {},
     focusableTabIndex: 1
 };
